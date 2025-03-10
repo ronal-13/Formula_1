@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'Alphacorsa';
+    src: url('../FONT/alphacorsa/AlphacorsaPersonalUse-8MEMD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alphacorsa Italic';
+    src: url('../FONT/alphacorsa/AlphacorsaPersonalUseItalic-YzYzj.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.Logo {
+    margin-right: 20px;
+    width: auto;
+    height: auto;
+}
+
+.welcome{
+    font-weight: bold;
+    position: relative;
+    border-right: 10px solid rgb(0, 0, 0);
+    border-top: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: left;
+    font-family: 'Alphacorsa', sans-serif; /* Aplicar la nueva fuente */
+    margin-left: 10px;
+}
+
+.texto{
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 10px;
+    
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.subtitulo{
+    text-align: left;
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}
+
+.title{
+    text-align: left;
+    font-weight: bold;
+}
+
+.div1 {
+    grid-column: span 4 / span 4;
+    grid-row: span 6 / span 6;
+    padding: 20px;
+    background-color: #ffffff;
+    position: relative;
+    border-right: 10px solid red;
+    border-top: 10px solid red;
+    border-radius: 10px;
+}
+
+.div1 h1 {
+    font-size: 2rem;
+    margin: 0 0 20px 0; /* Espacio debajo del título */
+}
+
+.div1 h1:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+    text-decoration-color: rgb(0, 0, 0); /* Color del subrayado */
+    text-decoration-thickness: 1px; /* Grosor del subrayado (más delgado)*/ 
+}
+
+/* Efecto de zoom en la imagen al pasar el mouse sobre el texto */
+.div1 h1:hover + .gridimage {
+    transform: scale(1.05); /* Escala la imagen un 5% */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.div2, .div3, .div4, .div5, .div6, .div7 {
+    padding: 15px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el espacio entre texto e imagen */
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+    border-right: 2px solid rgb(197, 197, 197);
+    border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.div2 h2, .div3 h2, .div4 h2, .div5 h2, .div6 h2, .div7 h2 {
+    font-size: 14px;
+    margin: 5px;
+    text-align: left;
+    color: red;
+    font-weight: bold;
+}
+
+.div2 p, .div3 p, .div4 p, .div5 p, .div6 p, .div7 p {
+    font-size: 1rem;
+    margin: 0 0 10px 0; /* Espacio debajo del texto */
+    text-align: left;
+}
+
+/* Efecto de zoom al pasar el mouse */
+.div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover, .div7:hover {
+    transform: scale(1.05); /* Escala el div un 5% */
+    border-right-color: red; /* Borde derecho rojo */
+    border-bottom-color: red; /* Borde inferior rojo */
+}
+
+/* Cambiar el color del texto a rojo al pasar el mouse */
+.div2:hover h2, .div3:hover h2, .div4:hover h2, .div5:hover h2, .div6:hover h2, .div7:hover h2,
+.div2:hover p, .div3:hover p, .div4:hover p, .div5:hover p, .div6:hover p, .div7:hover p {
+    color: rgb(0, 0, 0); /* Cambia el color del texto a rojo */
+}
+
+.grid-image {
+    width: auto; /* La imagen ocupa el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 0; /* Bordes redondeados para las imágenes */
+}
+
+.gridimage {
+    width: 100%; /* La imagen ocupa el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 7;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 7;
+    grid-row-start: 4;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 7;
+}
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 7;
+    grid-row-start: 7;
+}
+
+/* Media query para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+    .parent {
+        display: flex;
+        flex-direction: column; /* Cambia a una columna */
+        gap: 16px; /* Espacio entre elementos */
+    }
+
+    .div1, .div2, .div3, .div4, .div5, .div6, .div7 {
+        width: 100%; /* Ocupa el 100% del ancho */
+        grid-column: unset; /* Elimina la configuración de grid */
+        grid-row: unset; /* Elimina la configuración de grid */
+        margin-bottom: 16px; /* Espacio entre elementos */
+    }
+
+    .div1 {
+        order: 1; /* Asegura que .div1 esté primero */
+    }
+
+    .div2 {
+        order: 2;
+    }
+
+    .div3 {
+        order: 3;
+    }
+
+    .div4 {
+        order: 4;
+    }
+
+    .div5 {
+        order: 5;
+    }
+
+    .div6 {
+        order: 6;
+    }
+
+    .div7 {
+        order: 7;
+    }
+}

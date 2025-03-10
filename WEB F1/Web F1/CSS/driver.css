@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Alphacorsa';
+    src: url('../FONT/alphacorsa/AlphacorsaPersonalUse-8MEMD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alphacorsa Italic';
+    src: url('../FONT/alphacorsa/AlphacorsaPersonalUseItalic-YzYzj.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.center {
+    font-weight: bold;
+    position: relative;
+    border-right: 8px solid rgb(0, 0, 0);
+    border-top: 8px solid rgb(0, 0, 0);
+    font-size: 50px;
+    border-radius: 10px;
+    font-family: 'Alphacorsa', sans-serif; /* Aplicar la nueva fuente */
+    margin-left: 0;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.texto{
+    border-radius: 5px;
+    border-color: black;
+    background-color: rgb(199, 199, 199);
+    padding: 10px;
+    margin: 15px;
+}
+
+.drive {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo de la tarjeta */
+.card {
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-left: 0px;
+    border-bottom: 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.06);
+    border-right-color: red; /* Borde derecho rojo */
+    border-top-color: rgb(255, 0, 0); /* Borde inferior rojo */
+}
+
+
+/*==================================================*/
+
+/*NOMBRE*/
+.name{
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: -20px;
+    margin-left: -15px;
+}
+
+/*APELLIDO*/
+.last{
+    text-align: left;
+    font-weight: bolder;
+    margin-left: -15px;
+    margin-top: -10px;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+/*.color-bar {
+    display: inline-block;
+    width: 6px; 
+    height: 18px; 
+    margin-right: 8px; 
+    border-radius: 3px; 
+}*/
+
+/*bandera*/
+.flag-img{
+    position: relative;
+    height: auto;
+    width: 48px;
+    border-radius: 5px;
+    border: 1px solid black;
+    align-self: flex-end; /* Alinea la bandera a la derecha */
+    margin-bottom: 20px;
+    margin-left: 88%;
+    margin-top: -59px;
+}
+
+.linea{
+    border-top: 1px solid gray;
+    width: 128%;
+    margin-left: -30px;
+    margin-top: -17px;
+}
+
+/*escuderia*/
+.team{
+    text-align: left;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+    margin-left: -15px;
+}
+
+/*piloto*/
+.driver{
+    height: auto;
+    width: 100%;
+    margin-top: -15px;
+    margin-right: -50px;
+    margin-bottom: none;
+}
+
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .drive {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+
+    .name, .last {
+        font-size: 12px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .flag-img {
+        width: 40px;
+        margin-top: -35px; /* Ajusta el tamaño de la bandera para pantallas más pequeñas */
+    }
+}

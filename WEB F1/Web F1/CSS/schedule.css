@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Alphacorsa';
+    src: url('../FONT/alphacorsa/AlphacorsaPersonalUse-8MEMD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alphacorsa Italic';
+    src: url('../FONT/alphacorsa/AlphacorsaPersonalUseItalic-YzYzj.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
+    grid-template-rows: auto;
+    /*gap: 20px;*/
+    padding: 20px;
+    row-gap: 50px;
+    column-gap: 20px;
+}
+
+.centar{
+    font-weight: bold;
+    position: relative;
+    border-right: 10px solid rgb(0, 0, 0);
+    border-top: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: left;
+    font-family: 'Alphacorsa', sans-serif; /* Aplicar la nueva fuente */
+    margin-left: 10px;
+    margin: 30px;
+}
+
+/* Tarjeta de cada carrera */
+.race-card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-top: 2.5px solid rgb(0, 0, 0);
+    border-right: 2.5px solid rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    position: relative;
+    padding: 20px;
+    padding-top: 30px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.race-card:hover {
+    transform: scale(1.05);
+    border-right-color: red; /* Borde derecho rojo */
+    border-top-color: rgb(255, 0, 0); /* Borde inferior rojo */
+}
+
+/* Información de la carrera */
+.race-info {
+    padding: 10px;
+    text-align: center;
+}
+
+/*=======================================================================================*/
+/* Número de ronda */
+.round {
+    position: absolute;
+    top: -12px;
+    left: 0px;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    padding: 0 5px;
+}
+
+/*fecha*/
+.dia{
+    position: absolute;
+    top: 3px;
+    font-size: 26px;
+    margin-bottom: 50px;
+    left: 0;
+}
+
+/*mes*/
+.mes{
+    position: absolute;
+    top: 40px;
+    background-color: black;
+    color: white;
+    padding: 0 2px;
+    left: 0;
+    text-align: center;
+    font-weight: bold;
+    width: 50px;
+    height: 26px;
+    font-family: 'Alphacorsa', sans-serif; /* Aplicar la nueva fuente */
+}
+
+/* Bandera del país */
+.Flag{
+    position: relative;
+    top: -40px;
+    right: -157px;
+    width: 55px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid black; /* Define el borde con grosor y estilo */
+}
+
+.linea-separadora0{
+    border-top: 1px solid gray;
+    width: 110%;
+    margin: 60px;
+    margin-left: -20px;
+}
+
+/*titulo de la carrera*/
+.titulo{
+    position: relative;
+    margin-top: -60px;
+    font-weight: bold;
+    left: -15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.flecha::after {
+    content: ">";
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+
+/*info de la carrera*/
+.text{
+    position: relative;
+    margin-top: -20px;
+    left: -15px;
+    font-size: 14px;
+}
+
+.linea-separadora1{
+    position: relative;
+    border-top: 1px solid gray;
+    width: 110%;
+    margin: 20px;
+    margin-left: -20px;
+    margin-bottom: 25px;
+}
+
+/*imagen del circuito*/
+.race{
+    position: relative;
+    width: 96.5%;
+    max-height: 115px;
+    object-fit: contain;
+    margin-top: -15px;
+    background-color: rgba(255, 69, 69, 0);
+    left: 0px;
+
+    /*para el fondo*/
+    background-image: url('/Web F1/images/image.png');
+    background-size: 150%;
+    background-position: left 0px top;
+    background-repeat: no-repeat;
+
+}
+
+/* 📱 Responsive Design */
+
+/* Para tablets (máx. 1024px) */
+@media (max-width: 1024px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+
+    .race-card {
+        padding: 15px; /* Ajuste de espacio */
+    }
+}
+
+/* Para móviles (máx. 600px) */
+@media (max-width: 600px) {
+    .parent {
+        grid-template-columns: repeat(1, 1fr); /* 1 columna en pantallas pequeñas */
+    }
+
+    .race-card {
+        padding: 10px;
+    }
+
+    .race-image {
+        max-height: 120px; /* Reduce la altura de la imagen */
+    }
+
+    .round {
+        font-size: 12px; /* Texto más pequeño en móviles */
+    }
+
+    .Flag{
+        margin-left: 90px
+    }
+}
+

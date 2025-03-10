@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'Alphacorsa';
+    src: url('../FONT/alphacorsa/AlphacorsaPersonalUse-8MEMD.ttf') format('truetype');
+}
+
+.text {
+    font-weight: bold;
+    position: relative;
+    border-right: 10px solid rgb(0, 0, 0);
+    border-top: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: left;
+    font-family: 'Alphacorsa', sans-serif; /* Aplicar la nueva fuente */
+    margin-left: 10px;
+    margin: 30px;
+    font-size: 50px;
+}   
+
+.card.body {
+    margin-left: -20px;
+    width: 550px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.card.body1 {
+    width: 550px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px; /* Espacio inferior */
+    margin-left: -20px; /* Espacio derecho */
+}
+
+/* Logo del equipo */
+.logo {
+    width: 65px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+/* Nombre del equipo */
+.team {
+    font-size: 1.8em;
+    font-family: 'Alphacorsa', sans-serif;
+    font-weight: bold;
+    padding-left: 8px;
+    display: inline-block;
+    margin: 18px;
+    text-align: left;
+    margin-left: 5px;
+    align-items: center;
+    display: flex;
+}
+
+/* Barra de color a la izquierda */
+.team::before {
+    content: "";
+    width: 5px;
+    height: 40px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Colores personalizados por equipo */
+.alpine .team::before {
+    background-color: #0090FF; /* Azul Alpine */
+}
+
+.aston-martin .team::before {
+    background-color: #006F62; /* Verde Aston Martin */
+}
+
+.ferrari .team::before {
+    background-color: #DC0000; /* Rojo Ferrari */
+}
+
+.mercedes .team::before {
+    background-color: #00D2BE; /* Turquesa Mercedes */
+}
+
+.red-bull-racing .team::before {
+    background-color: #1E41FF; /* Azul Red Bull */
+}
+
+.racing-bulls .team::before {
+    background-color: #6692FF; /* Azul Visa Cash App RB */
+}
+
+.kick-sauber .team::before {
+    background-color: #00ff0d; /* Verde azulado Sauber */
+}
+
+.haas .team::before {
+    background-color: #B6BABD; /* Gris Haas */
+}
+
+.mclaren .team::before {
+    background-color: #FF8700; /* Naranja McLaren */
+}
+
+.williams .team::before {
+    background-color: #005AFF; /* Azul Williams */
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Colores de borde personalizados por equipo */
+.red-bull-racing:hover {
+    border-right-color: #052aff; /* Azul Red Bull */
+    border-top-color: #0026fd;
+}
+
+.mercedes:hover {
+    border-right-color: #00D2BE; /* Turquesa Mercedes */
+    border-top-color: #00D2BE;
+}
+
+.ferrari:hover {
+    border-right-color: #DC0000; /* Rojo Ferrari */
+    border-top-color: #DC0000;
+}
+
+.mclaren:hover {
+    border-right-color: #FF8700; /* Naranja McLaren */
+    border-top-color: #FF8700;
+}
+
+.alpine:hover {
+    border-right-color: #0090FF; /* Azul Alpine */
+    border-top-color: #0090FF;
+}
+
+.aston-martin:hover {
+    border-right-color: #006F62; /* Verde Aston Martin */
+    border-top-color: #006F62;
+}
+
+.williams:hover {
+    border-right-color: #005AFF; /* Azul Williams */
+    border-top-color: #005AFF;
+}
+
+.haas:hover {
+    border-right-color: #B6BABD; /* Gris Haas */
+    border-top-color: #B6BABD;
+}
+
+.kick-sauber:hover {
+    border-right-color: #00ff0d; /* Verde azulado Sauber */
+    border-top-color: #00ff0d;
+}
+
+.racing-bulls:hover {
+    border-right-color: #6692FF; /* Azul Visa Cash App RB */
+    border-top-color: #6692FF;
+}
+
+
+/* Sección de pilotos */
+.card.name1{
+    display: flex;
+    align-items: left;
+    text-align: left;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px;
+    margin-bottom: -25px;
+    height: 50px;
+    width: 250px;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    margin-left: 5px;
+}
+
+.card.name2 {
+    display: flex;
+    align-items: right;
+    text-align: left;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px;
+    margin-top: -25px;
+    height: 50px;
+    width: 250px;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    margin-left: 273px;
+}
+/*=======================================*/
+.linea-separadora0{
+    border-top: 1px solid gray;
+    width: auto;
+    margin: 5px;
+    margin-left: 5px;
+}
+
+.driver1, .driver2{
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0;
+}
+
+strong {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Imagen de los pilotos */
+.drive {
+    width: 20%;
+    border-radius: 1%;
+    margin-left: 192px;
+    margin-top: -35px;
+}
+
+/* Imagen del auto */
+.car {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    /*para el fondo*/
+    background-image: url('/Web F1/images/image.png');
+    background-size: 100%;
+    background-position: left 0px top;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 30px;
+        border-right: 5px solid rgb(0, 0, 0);
+        border-top: 5px solid rgb(0, 0, 0);
+        margin: 15px;
+    }
+
+    .card.body, .card.body1 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px;
+    }
+
+    .team {
+        font-size: 1.5em;
+        padding-left: 6px;
+        margin: 10px;
+    }
+
+    .logo{
+        margin-top: -10px;
+    }
+
+    .card.name1 {
+        width: 48%;
+        margin-left: 0px;
+        justify-content: left;
+    }
+    
+    .card.name2 {
+        width: 48%;
+        margin-left: 227px;
+        justify-content: left;
+    }
+
+    @media screen and (max-width: 768px) {
+        .drive {
+            display: none;
+        }
+    }
+
+    .car {
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    
+    .text {
+        font-size: 20px;
+        border-right: 3px solid rgb(0, 0, 0);
+        border-top: 3px solid rgb(0, 0, 0);
+        margin: 10px;
+        margin-top: -20px;
+    }
+
+    .logo{
+        margin-top: 0px;
+        width: 15%;
+    }
+
+    .team {
+        font-size: 1.3em;
+    }
+
+    .card.body .card.body1 {
+        width: 95%;
+        padding: 6px;
+    }
+
+    .card.name1{
+        width: 45%;
+        text-align: left;
+        margin-left: 164px; 
+    } 
+    
+    .card.name2 {
+        width: 45%;
+        text-align: left;
+        margin-left: -0px;
+    }
+
+    .driver1, .driver2{
+        margin-top: -10px;
+    }
+
+    @media screen and (max-width: 480px) {
+        .drive {
+            display: none;
+        }
+    }
+}
